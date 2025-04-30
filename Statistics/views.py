@@ -9,10 +9,7 @@ def is_prime(n):
             return False
     return True
 
-#def is_armstrong(n):
-#    s = str(n)
- #   p = len(s)
-  #  return n == sum(int(d)**p for d in s)
+
 
 def is_armstrong(n):
     digits = [int(d) for d in str(n)]
@@ -25,7 +22,7 @@ def process_file(f):
     return [int(x) for x in data.split(',') if x.strip()]
 
 def calculate_statistics(numbers):
-    # numbers guaranteed non-empty
+    
     total = sum(numbers)
     mean = total / len(numbers)
     sorted_nums = sorted(numbers)
@@ -54,7 +51,7 @@ def calculate_statistics(numbers):
     }
 
 def homepage(request):
-    """Display only the form & cart count."""
+    
     
     form = NumberForm()
     cart = request.session.get('cart', [])
@@ -65,7 +62,7 @@ def homepage(request):
     })
 
 def results(request):
-    """Handle POST from homepage; calculate & display stats."""
+    
     unique_count = request.session.get('unique_count', 0)
 
     if request.method != 'POST':
