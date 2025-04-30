@@ -1,13 +1,1 @@
-<script>start("/Users/priyadarshinikatepalli/assignment/Statistics/");</script>
-<script>onHasParentDirectory();</script>
-<script>addRow("__pycache__","__pycache__",1,288,"288 B",1745986031,"4/30/25, 12:07:11 AM");</script>
-<script>addRow("migrations","migrations",1,128,"128 B",1745522193,"4/24/25, 3:16:33 PM");</script>
-<script>addRow("templates","templates",1,96,"96 B",1745522581,"4/24/25, 3:23:01 PM");</script>
-<script>addRow("__init__.py","__init__.py",0,0,"0 B",1745521059,"4/24/25, 2:57:39 PM");</script>
-<script>addRow("admin.py","admin.py",0,63,"63 B",1745521059,"4/24/25, 2:57:39 PM");</script>
-<script>addRow("apps.py","apps.py",0,152,"152 B",1745521059,"4/24/25, 2:57:39 PM");</script>
-<script>addRow("forms.py","forms.py",0,207,"207 B",1745521801,"4/24/25, 3:10:01 PM");</script>
-<script>addRow("models.py","models.py",0,57,"57 B",1745521059,"4/24/25, 2:57:39 PM");</script>
-<script>addRow("tests.py","tests.py",0,60,"60 B",1745521059,"4/24/25, 2:57:39 PM");</script>
-<script>addRow("urls.py","urls.py",0,270,"270 B",1745985406,"4/29/25, 11:56:46 PM");</script>
-<script>addRow("views.py","views.py",0,3338,"3.3 kB",1745985933,"4/30/25, 12:05:33 AM");</script>
+
