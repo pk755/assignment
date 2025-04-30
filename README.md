@@ -51,18 +51,21 @@ assignment/
 └── manage.py
 
 
-1. Setup Environment
+1. Setup Environment:
 
 cd assignment
-python3 -m venv env
-source env/bin/activate  
-pip install django (If not installed)
-```
 
-2. Run the Server
+python3 -m venv env
+
+source env/bin/activate  
+
+pip install django (If not installed)
+
+
+2. Run the Server:
 
 python3 manage.py runserver
 
 
-3. Open in Browser
+3. Open in Browser:
 Navigate to [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
