@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <link href="{% static 'Statistics/css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+  <div class="background-blur"></div> 
+  <div class="home-container">
+    <h2>Statistics Results</h2>
+
+    {% if form.errors %}
+      <div class="errors">
+        {{ form.non_field_errors }}
+        {{ form.numbers.errors }}
+        {{ form.file.errors }}
+      </div>
+    {% endif %}
+
+    {% if stats %}
+      <ul>
+        <li><strong>Sum:</strong> {{ stats.sum }}</li>
+        <li><strong>Mean:</strong> {{ stats.mean }}</li>
+        <li><strong>Median:</strong> {{ stats.median }}</li>
+        <li><strong>Mode:</strong> {{ stats.mode }}</li>
+        <li><strong>Range:</strong> {{ stats.range }}</li>
+        <li><strong>Prime Numbers:</strong> {{ stats.prime }}</li>
+        <li><strong>Armstrong Numbers:</strong> {{ stats.armstrong }}</li>
+        <li><strong>Unique Count:</strong> {{ count }}</li>
+      </ul>
+    {% endif %}
+    <a href="{% url 'cart' %}">
+      <button class="cart-btn">Cart ({{ unique_count }})</button>
+    </a>
+    <a href="{% url 'homepage' %}">
+      <button class="back-btn">← Back to Homepage</button>
+    </a>
+  </div>
+</body>
+</html>

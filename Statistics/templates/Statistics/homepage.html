@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Statistics</title>
+  <link href="{% static 'Statistics/css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+  <div class="background-blur"></div> 
+  <div class="nav-top">
+    <a href="{% url 'cart' %}">
+      <button class="cart-btn" style="margin-right:30px;">Cart ({{ unique_count }})</button>
+    </a>
+  </div>
+  
+
+  <div class="home-container">
+    <h2>Enter Numbers or Upload File</h2>
+    <form action="{% url 'results' %}" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
